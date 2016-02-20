@@ -1,0 +1,43 @@
+### Standard Background
+
+ status = "normal";
+ SpriteWindowSetBackgroundTopColor(0.00, 0.00, 0.00);
+ SpriteWindowSetBackgroundBottomColor(0.00, 0.00, 0.00);
+
+index = 0;
+while (1){
+    index_string = index;
+    if (index < 10) index_string = "0" + index_string;
+    frame_image[index] = ImageNew("throbber-" + index_string);
+    if (!frame_image[index]) break;
+    index++;
+    }
+frame_count = index + 1;
+frame_index = 0;
+throbber_sprite = SpriteNew();
+
+fun refresh (){
+    if (status == "normal"){
+        frame_index += 12 / 50;
+        frame_index %= frame_count;
+        int_frame_index = MathInt(frame_index);
+        SpriteSetImage (throbber_sprite, frame_image[int_frame_index]);
+        SpriteSetX (throbber_sprite, SpriteWindowGetWidth()  / 2 - ImageGetWidth(frame_image[0])  / 2);
+SpriteSetY (throbber_sprite, SpriteWindowGetHeight()  / 2 - ImageGetHeight(frame_image[0])  / 2);
+        SpriteSetOpacity (throbber_sprite, 1);
+       
+        }
+    
+    }
+
+PlymouthSetRefreshFunction (refresh);
+
+
+
+
+
+
+
+
+
+

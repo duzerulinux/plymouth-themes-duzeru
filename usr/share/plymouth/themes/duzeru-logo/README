@@ -1,0 +1,20 @@
+Plymouth themes para Debian
+
+* Como instalar *
+
+copie a pasta do tema DuZeru para: /usr/share/plymouth/themes/
+
+dê este comando no terminal para listar os temas:
+# plymouth-set-default-theme --list
+
+selecione o tema (em modo root):
+# plymouth-set-default-theme <selected_theme>
+
+Configure o seu default plymouth theme (em modo root):
+# update-initramfs -u
+
+
+* CREDITS *
+
+Frannoe.
+Claudio A. Silva

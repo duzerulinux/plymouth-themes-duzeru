@@ -1,0 +1,11 @@
+Package: plymouth-themes-duzeru
+Version: 1.0.5
+Architecture: all
+Maintainer: Claudio A. Silva <claudiosilva@duzeru.org>
+Installed-Size: 55
+Depends: plymouth
+Provides: plymouth-theme
+Section: admin
+Priority: optional
+Description: DuZeru GNU Linux Plymouth theme
+ Plymouth provides an attractive boot animation created by Team DuZeru.

@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=duzeru-logo
+Description=DuZeru plymouth fork do DMDc Theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/duzeru-logo
+ScriptFile=/usr/share/plymouth/themes/duzeru-logo/duzeru-logo.script
+
